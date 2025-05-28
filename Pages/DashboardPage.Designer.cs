@@ -29,26 +29,18 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardPage));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             dataGridView2 = new DataGridView();
             dataGridView1 = new DataGridView();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            lblBilling = new Label();
-            label8 = new Label();
-            guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            pictureBox3 = new PictureBox();
-            guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             lblCancel = new Label();
             label14 = new Label();
             guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -57,6 +49,7 @@
             lblDentists = new Label();
             label6 = new Label();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            label2 = new Label();
             guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             pictureBox2 = new PictureBox();
             guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -70,11 +63,6 @@
             guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             pictureBox4 = new PictureBox();
             guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            lblActive = new Label();
-            label10 = new Label();
-            guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            pictureBox7 = new PictureBox();
-            guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             lblAppointments = new Label();
             label1 = new Label();
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -83,14 +71,20 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            label3 = new Label();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Collumn2 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            guna2ShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox3).BeginInit();
             guna2ShadowPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox6).BeginInit();
+            guna2Panel1.SuspendLayout();
             guna2ShadowPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox2).BeginInit();
@@ -100,124 +94,56 @@
             guna2ShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox4).BeginInit();
-            guna2ShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox7).BeginInit();
             guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            guna2Panel2.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView2
             // 
+            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(31, 321);
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView2.Location = new Point(19, 315);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(647, 244);
+            dataGridView2.Size = new Size(670, 250);
             dataGridView2.TabIndex = 11;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(708, 321);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column4, Collumn2, Column5 });
+            dataGridView1.Location = new Point(708, 66);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(647, 244);
+            dataGridView1.Size = new Size(656, 499);
             dataGridView1.TabIndex = 8;
-            // 
-            // guna2Panel2
-            // 
-            guna2Panel2.BackColor = SystemColors.ControlLightLight;
-            guna2Panel2.BorderRadius = 20;
-            guna2Panel2.CustomizableEdges = customizableEdges1;
-            guna2Panel2.FillColor = Color.Gold;
-            guna2Panel2.Location = new Point(31, 265);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel2.Size = new Size(647, 50);
-            guna2Panel2.TabIndex = 6;
-            // 
-            // lblBilling
-            // 
-            lblBilling.AutoSize = true;
-            lblBilling.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblBilling.ForeColor = SystemColors.AppWorkspace;
-            lblBilling.Location = new Point(277, 65);
-            lblBilling.Name = "lblBilling";
-            lblBilling.Size = new Size(26, 30);
-            lblBilling.TabIndex = 7;
-            lblBilling.Text = "0";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(240, 20);
-            label8.Name = "label8";
-            label8.Size = new Size(59, 25);
-            label8.TabIndex = 6;
-            label8.Text = "Billing";
-            // 
-            // guna2ShadowPanel4
-            // 
-            guna2ShadowPanel4.BackColor = Color.Transparent;
-            guna2ShadowPanel4.Controls.Add(pictureBox3);
-            guna2ShadowPanel4.Controls.Add(guna2CirclePictureBox3);
-            guna2ShadowPanel4.Controls.Add(lblBilling);
-            guna2ShadowPanel4.Controls.Add(label8);
-            guna2ShadowPanel4.FillColor = Color.White;
-            guna2ShadowPanel4.Location = new Point(695, 3);
-            guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            guna2ShadowPanel4.ShadowColor = Color.Black;
-            guna2ShadowPanel4.Size = new Size(340, 110);
-            guna2ShadowPanel4.TabIndex = 14;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Blue;
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(29, 32);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(25, 25);
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
-            // 
-            // guna2CirclePictureBox3
-            // 
-            guna2CirclePictureBox3.BackgroundImage = (Image)resources.GetObject("guna2CirclePictureBox3.BackgroundImage");
-            guna2CirclePictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            guna2CirclePictureBox3.FillColor = Color.Blue;
-            guna2CirclePictureBox3.ImageRotate = 0F;
-            guna2CirclePictureBox3.Location = new Point(17, 20);
-            guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
-            guna2CirclePictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox3.Size = new Size(50, 50);
-            guna2CirclePictureBox3.TabIndex = 9;
-            guna2CirclePictureBox3.TabStop = false;
             // 
             // lblCancel
             // 
             lblCancel.AutoSize = true;
             lblCancel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblCancel.ForeColor = SystemColors.AppWorkspace;
-            lblCancel.Location = new Point(402, 64);
+            lblCancel.Location = new Point(279, 64);
             lblCancel.Name = "lblCancel";
             lblCancel.Size = new Size(26, 30);
             lblCancel.TabIndex = 13;
-            lblCancel.Text = "0";
+            lblCancel.Text = "3";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(230, 19);
+            label14.Location = new Point(115, 19);
             label14.Name = "label14";
             label14.Size = new Size(194, 25);
             label14.TabIndex = 12;
             label14.Text = "Canceled Appointment";
+            label14.Click += label14_Click;
             // 
             // guna2ShadowPanel7
             // 
@@ -227,10 +153,10 @@
             guna2ShadowPanel7.Controls.Add(lblCancel);
             guna2ShadowPanel7.Controls.Add(label14);
             guna2ShadowPanel7.FillColor = Color.White;
-            guna2ShadowPanel7.Location = new Point(462, 3);
+            guna2ShadowPanel7.Location = new Point(3, 3);
             guna2ShadowPanel7.Name = "guna2ShadowPanel7";
             guna2ShadowPanel7.ShadowColor = Color.Black;
-            guna2ShadowPanel7.Size = new Size(453, 104);
+            guna2ShadowPanel7.Size = new Size(337, 104);
             guna2ShadowPanel7.TabIndex = 15;
             // 
             // pictureBox6
@@ -252,7 +178,7 @@
             guna2CirclePictureBox6.ImageRotate = 0F;
             guna2CirclePictureBox6.Location = new Point(13, 19);
             guna2CirclePictureBox6.Name = "guna2CirclePictureBox6";
-            guna2CirclePictureBox6.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CirclePictureBox6.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2CirclePictureBox6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox6.Size = new Size(50, 50);
             guna2CirclePictureBox6.TabIndex = 15;
@@ -263,32 +189,46 @@
             lblDentists.AutoSize = true;
             lblDentists.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblDentists.ForeColor = SystemColors.AppWorkspace;
-            lblDentists.Location = new Point(278, 65);
+            lblDentists.Location = new Point(183, 65);
             lblDentists.Name = "lblDentists";
             lblDentists.Size = new Size(26, 30);
             lblDentists.TabIndex = 5;
-            lblDentists.Text = "0";
+            lblDentists.Text = "5";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(224, 20);
+            label6.Location = new Point(133, 20);
             label6.Name = "label6";
             label6.Size = new Size(76, 25);
             label6.TabIndex = 4;
             label6.Text = "Dentists";
+            label6.Click += label6_Click;
             // 
             // guna2Panel1
             // 
             guna2Panel1.BackColor = SystemColors.ControlLightLight;
             guna2Panel1.BorderRadius = 20;
-            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.Controls.Add(label2);
+            guna2Panel1.CustomizableEdges = customizableEdges11;
             guna2Panel1.FillColor = SystemColors.Highlight;
-            guna2Panel1.Location = new Point(708, 265);
+            guna2Panel1.Location = new Point(708, 10);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel1.Size = new Size(647, 50);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel1.Size = new Size(656, 50);
             guna2Panel1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.Highlight;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(238, 13);
+            label2.Name = "label2";
+            label2.Size = new Size(174, 30);
+            label2.TabIndex = 15;
+            label2.Text = "Periodic Report";
             // 
             // guna2ShadowPanel3
             // 
@@ -298,10 +238,10 @@
             guna2ShadowPanel3.Controls.Add(lblDentists);
             guna2ShadowPanel3.Controls.Add(label6);
             guna2ShadowPanel3.FillColor = Color.White;
-            guna2ShadowPanel3.Location = new Point(349, 3);
+            guna2ShadowPanel3.Location = new Point(232, 3);
             guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             guna2ShadowPanel3.ShadowColor = Color.Black;
-            guna2ShadowPanel3.Size = new Size(340, 113);
+            guna2ShadowPanel3.Size = new Size(223, 113);
             guna2ShadowPanel3.TabIndex = 12;
             // 
             // pictureBox2
@@ -323,7 +263,7 @@
             guna2CirclePictureBox2.ImageRotate = 0F;
             guna2CirclePictureBox2.Location = new Point(16, 20);
             guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges13;
             guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox2.Size = new Size(50, 50);
             guna2CirclePictureBox2.TabIndex = 7;
@@ -337,10 +277,10 @@
             guna2ShadowPanel6.Controls.Add(lblComplete);
             guna2ShadowPanel6.Controls.Add(label12);
             guna2ShadowPanel6.FillColor = Color.White;
-            guna2ShadowPanel6.Location = new Point(921, 3);
+            guna2ShadowPanel6.Location = new Point(346, 3);
             guna2ShadowPanel6.Name = "guna2ShadowPanel6";
             guna2ShadowPanel6.ShadowColor = Color.Black;
-            guna2ShadowPanel6.Size = new Size(455, 104);
+            guna2ShadowPanel6.Size = new Size(337, 104);
             guna2ShadowPanel6.TabIndex = 13;
             // 
             // pictureBox5
@@ -362,7 +302,7 @@
             guna2CirclePictureBox5.ImageRotate = 0F;
             guna2CirclePictureBox5.Location = new Point(11, 19);
             guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
-            guna2CirclePictureBox5.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2CirclePictureBox5.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox5.Size = new Size(50, 50);
             guna2CirclePictureBox5.TabIndex = 13;
@@ -373,16 +313,16 @@
             lblComplete.AutoSize = true;
             lblComplete.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblComplete.ForeColor = SystemColors.AppWorkspace;
-            lblComplete.Location = new Point(398, 64);
+            lblComplete.Location = new Point(286, 64);
             lblComplete.Name = "lblComplete";
             lblComplete.Size = new Size(26, 30);
             lblComplete.TabIndex = 11;
-            lblComplete.Text = "0";
+            lblComplete.Text = "6";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(220, 19);
+            label12.Location = new Point(112, 19);
             label12.Name = "label12";
             label12.Size = new Size(200, 25);
             label12.TabIndex = 10;
@@ -393,16 +333,16 @@
             lblPatients.AutoSize = true;
             lblPatients.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblPatients.ForeColor = SystemColors.AppWorkspace;
-            lblPatients.Location = new Point(281, 65);
+            lblPatients.Location = new Point(180, 65);
             lblPatients.Name = "lblPatients";
             lblPatients.Size = new Size(26, 30);
             lblPatients.TabIndex = 3;
-            lblPatients.Text = "0";
+            lblPatients.Text = "4";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(230, 20);
+            label4.Location = new Point(133, 20);
             label4.Name = "label4";
             label4.Size = new Size(73, 25);
             label4.TabIndex = 2;
@@ -416,10 +356,10 @@
             guna2ShadowPanel2.Controls.Add(lblPatients);
             guna2ShadowPanel2.Controls.Add(label4);
             guna2ShadowPanel2.FillColor = Color.White;
-            guna2ShadowPanel2.Location = new Point(1041, 3);
+            guna2ShadowPanel2.Location = new Point(461, 3);
             guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             guna2ShadowPanel2.ShadowColor = Color.Black;
-            guna2ShadowPanel2.Size = new Size(341, 110);
+            guna2ShadowPanel2.Size = new Size(225, 110);
             guna2ShadowPanel2.TabIndex = 9;
             // 
             // pictureBox4
@@ -441,86 +381,28 @@
             guna2CirclePictureBox4.ImageRotate = 0F;
             guna2CirclePictureBox4.Location = new Point(15, 20);
             guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
-            guna2CirclePictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            guna2CirclePictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges15;
             guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox4.Size = new Size(50, 50);
             guna2CirclePictureBox4.TabIndex = 11;
             guna2CirclePictureBox4.TabStop = false;
-            // 
-            // lblActive
-            // 
-            lblActive.AutoSize = true;
-            lblActive.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblActive.ForeColor = SystemColors.AppWorkspace;
-            lblActive.Location = new Point(401, 63);
-            lblActive.Name = "lblActive";
-            lblActive.Size = new Size(26, 30);
-            lblActive.TabIndex = 9;
-            lblActive.Text = "0";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(252, 18);
-            label10.Name = "label10";
-            label10.Size = new Size(171, 25);
-            label10.TabIndex = 8;
-            label10.Text = "Active Appointment";
-            // 
-            // guna2ShadowPanel5
-            // 
-            guna2ShadowPanel5.BackColor = Color.Transparent;
-            guna2ShadowPanel5.Controls.Add(pictureBox7);
-            guna2ShadowPanel5.Controls.Add(guna2CirclePictureBox7);
-            guna2ShadowPanel5.Controls.Add(lblActive);
-            guna2ShadowPanel5.Controls.Add(label10);
-            guna2ShadowPanel5.FillColor = Color.White;
-            guna2ShadowPanel5.Location = new Point(3, 3);
-            guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            guna2ShadowPanel5.ShadowColor = Color.Black;
-            guna2ShadowPanel5.Size = new Size(453, 104);
-            guna2ShadowPanel5.TabIndex = 10;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.DeepSkyBlue;
-            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(25, 31);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(25, 25);
-            pictureBox7.TabIndex = 18;
-            pictureBox7.TabStop = false;
-            // 
-            // guna2CirclePictureBox7
-            // 
-            guna2CirclePictureBox7.BackgroundImage = (Image)resources.GetObject("guna2CirclePictureBox7.BackgroundImage");
-            guna2CirclePictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            guna2CirclePictureBox7.FillColor = Color.DeepSkyBlue;
-            guna2CirclePictureBox7.ImageRotate = 0F;
-            guna2CirclePictureBox7.Location = new Point(13, 19);
-            guna2CirclePictureBox7.Name = "guna2CirclePictureBox7";
-            guna2CirclePictureBox7.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2CirclePictureBox7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox7.Size = new Size(50, 50);
-            guna2CirclePictureBox7.TabIndex = 17;
-            guna2CirclePictureBox7.TabStop = false;
             // 
             // lblAppointments
             // 
             lblAppointments.AutoSize = true;
             lblAppointments.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblAppointments.ForeColor = SystemColors.AppWorkspace;
-            lblAppointments.Location = new Point(282, 65);
+            lblAppointments.Location = new Point(184, 65);
             lblAppointments.Name = "lblAppointments";
             lblAppointments.Size = new Size(26, 30);
             lblAppointments.TabIndex = 1;
-            lblAppointments.Text = "0";
+            lblAppointments.Text = "3";
+            lblAppointments.Click += lblAppointments_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(186, 20);
+            label1.Location = new Point(84, 20);
             label1.Name = "label1";
             label1.Size = new Size(126, 25);
             label1.TabIndex = 0;
@@ -537,7 +419,7 @@
             guna2ShadowPanel1.Location = new Point(3, 3);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.ShadowColor = Color.Black;
-            guna2ShadowPanel1.Size = new Size(340, 113);
+            guna2ShadowPanel1.Size = new Size(223, 113);
             guna2ShadowPanel1.TabIndex = 7;
             // 
             // pictureBox1
@@ -559,7 +441,7 @@
             guna2CirclePictureBox1.ImageRotate = 0F;
             guna2CirclePictureBox1.Location = new Point(16, 20);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox1.Size = new Size(50, 50);
             guna2CirclePictureBox1.TabIndex = 2;
@@ -567,63 +449,123 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.ColumnCount = 3;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.Controls.Add(guna2ShadowPanel1, 0, 0);
-            tableLayoutPanel1.Controls.Add(guna2ShadowPanel4, 2, 0);
+            tableLayoutPanel1.Controls.Add(guna2ShadowPanel2, 2, 0);
             tableLayoutPanel1.Controls.Add(guna2ShadowPanel3, 1, 0);
-            tableLayoutPanel1.Controls.Add(guna2ShadowPanel2, 3, 0);
-            tableLayoutPanel1.Dock = DockStyle.Top;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1385, 119);
+            tableLayoutPanel1.Size = new Size(689, 119);
             tableLayoutPanel1.TabIndex = 16;
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel2.Controls.Add(guna2ShadowPanel7, 1, 0);
-            tableLayoutPanel2.Controls.Add(guna2ShadowPanel5, 0, 0);
-            tableLayoutPanel2.Controls.Add(guna2ShadowPanel6, 2, 0);
+            tableLayoutPanel2.Controls.Add(guna2ShadowPanel6, 1, 0);
+            tableLayoutPanel2.Controls.Add(guna2ShadowPanel7, 0, 0);
             tableLayoutPanel2.Location = new Point(3, 134);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(1379, 113);
+            tableLayoutPanel2.Size = new Size(686, 113);
             tableLayoutPanel2.TabIndex = 17;
+            // 
+            // guna2Panel2
+            // 
+            guna2Panel2.BackColor = SystemColors.ControlLightLight;
+            guna2Panel2.BorderRadius = 20;
+            guna2Panel2.Controls.Add(label3);
+            guna2Panel2.CustomizableEdges = customizableEdges17;
+            guna2Panel2.FillColor = SystemColors.Highlight;
+            guna2Panel2.Location = new Point(19, 259);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Panel2.Size = new Size(667, 50);
+            guna2Panel2.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.Highlight;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.Location = new Point(177, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(326, 30);
+            label3.TabIndex = 15;
+            label3.Text = "Appointment Status Summary";
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Status";
+            Column1.MinimumWidth = 8;
+            Column1.Name = "Column1";
+            Column1.Width = 210;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Count";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Percentage";
+            Column3.MinimumWidth = 8;
+            Column3.Name = "Column3";
+            Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Total Revenue";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.Width = 200;
+            // 
+            // Collumn2
+            // 
+            Collumn2.HeaderText = "Month";
+            Collumn2.MinimumWidth = 8;
+            Collumn2.Name = "Collumn2";
+            Collumn2.Width = 200;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Year";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.Width = 200;
             // 
             // DashboardPage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
+            Controls.Add(guna2Panel2);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
-            Controls.Add(guna2Panel2);
             Controls.Add(guna2Panel1);
             Name = "DashboardPage";
             Size = new Size(1385, 574);
             Load += DashboardPage_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            guna2ShadowPanel4.ResumeLayout(false);
-            guna2ShadowPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox3).EndInit();
             guna2ShadowPanel7.ResumeLayout(false);
             guna2ShadowPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox6).EndInit();
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
             guna2ShadowPanel3.ResumeLayout(false);
             guna2ShadowPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -636,16 +578,14 @@
             guna2ShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox4).EndInit();
-            guna2ShadowPanel5.ResumeLayout(false);
-            guna2ShadowPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox7).EndInit();
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
+            guna2Panel2.ResumeLayout(false);
+            guna2Panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -653,10 +593,6 @@
 
         private DataGridView dataGridView2;
         private DataGridView dataGridView1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Label lblBilling;
-        private Label label8;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
         private Label lblCancel;
         private Label label14;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
@@ -670,9 +606,6 @@
         private Label lblPatients;
         private Label label4;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
-        private Label lblActive;
-        private Label label10;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
         private Label lblAppointments;
         private Label label1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
@@ -680,8 +613,6 @@
         private TableLayoutPanel tableLayoutPanel2;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private PictureBox pictureBox3;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
         private PictureBox pictureBox6;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox6;
         private PictureBox pictureBox2;
@@ -690,8 +621,15 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox5;
         private PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
-        private PictureBox pictureBox7;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox7;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Label label2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Label label3;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Collumn2;
+        private DataGridViewTextBoxColumn Column5;
     }
 }

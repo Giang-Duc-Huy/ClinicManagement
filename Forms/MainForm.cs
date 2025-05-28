@@ -18,8 +18,18 @@ namespace ClinicManagement
         public MainForm()
         {
             InitializeComponent();
+            Load1();
         }
-
+        private void Load1()
+        {
+            patientPage1 = new ClinicManagement.Pages.PatientPage();
+            patientPage1.Dock = DockStyle.Fill;
+            patientPage1.BackColor = Color.White;
+            panel2.Controls.Add(patientPage1);
+            dentistPage1 = new ClinicManagement.Pages.DentistPage();
+            dentistPage1.Dock = DockStyle.Fill;
+            panel2.Controls.Add(dentistPage1);
+        }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             dentistPage1.Visible = false;
@@ -27,6 +37,7 @@ namespace ClinicManagement
             appointmentPage1.Visible = false;
             dashboardPage1.Visible = true;
             sessionPage1.Visible = false;
+            emailPage1.Visible = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -39,7 +50,8 @@ namespace ClinicManagement
             appointmentPage1.Visible = true;
             dentistPage1.Visible = false;
             patientPage1.Visible = false;
-            sessionPage1.Visible = false;   
+            sessionPage1.Visible = false;
+            emailPage1.Visible = false;
             dashboardPage1.Visible = false;
         }
 
@@ -49,7 +61,8 @@ namespace ClinicManagement
             appointmentPage1.Visible = false;
             dashboardPage1.Visible = false;
             patientPage1.Visible = false;
-            dentistPage1.Visible=false;
+            dentistPage1.Visible = false;
+            emailPage1.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -63,7 +76,8 @@ namespace ClinicManagement
             dentistPage1.Visible = false;
             appointmentPage1.Visible = false;
             dashboardPage1.Visible = false;
-            sessionPage1.Visible=false;
+            sessionPage1.Visible = false;
+            emailPage1.Visible = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -71,8 +85,9 @@ namespace ClinicManagement
             patientPage1.Visible = false;
             dentistPage1.Visible = false;
             appointmentPage1.Visible = false;
-            dashboardPage1.Visible = false;   
+            dashboardPage1.Visible = false;
             sessionPage1.Visible = false;
+            emailPage1.Visible = false;
         }
 
         private void btnDentist_Click(object sender, EventArgs e)
@@ -81,16 +96,28 @@ namespace ClinicManagement
             patientPage1.Visible = false;
             appointmentPage1.Visible = false;
             dashboardPage1.Visible = false;
+            sessionPage1.Visible = false;
+            emailPage1.Visible = false;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Thông báo", "Chắc chứ", MessageBoxButtons.OKCancel );
-            
-            if (result == DialogResult.OK) 
+            DialogResult result = MessageBox.Show("Thông báo", "Chắc chứ", MessageBoxButtons.OKCancel);
+
+            if (result == DialogResult.OK)
             {
                 Application.Exit();
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            dentistPage1.Visible = false;
+            patientPage1.Visible = false;
+            appointmentPage1.Visible = false;
+            dashboardPage1.Visible = false;
+            sessionPage1.Visible = false;
+            emailPage1.Visible = true;
         }
     }
 }

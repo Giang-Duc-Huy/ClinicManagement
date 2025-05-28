@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250527143929_AddTable")]
-    partial class AddTable
+    [Migration("20250528085644_Addnew")]
+    partial class Addnew
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,20 +29,28 @@ namespace ClinicManagement.Migrations
                     b.Property<bool>("Canceled")
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("Completed")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("DentistID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("DentistID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Notes")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("PatientID")
+                    b.Property<string>("PatientID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Pending")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Time")
@@ -52,31 +60,6 @@ namespace ClinicManagement.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Appointments");
-                });
-
-            modelBuilder.Entity("ClinicManagement.Models.Bill", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("REAL");
-
-                    b.Property<DateTime>("CreateAt")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TreatmentID")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Bills");
                 });
 
             modelBuilder.Entity("ClinicManagement.Models.Clinic", b =>
@@ -153,6 +136,35 @@ namespace ClinicManagement.Migrations
                     b.ToTable("Dentists");
                 });
 
+            modelBuilder.Entity("ClinicManagement.Models.History", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("AppointID")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DentistName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PatientName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("History");
+                });
+
             modelBuilder.Entity("ClinicManagement.Models.Patient", b =>
                 {
                     b.Property<string>("Id")
@@ -225,6 +237,25 @@ namespace ClinicManagement.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Treatments");
+                });
+
+            modelBuilder.Entity("ClinicManagement.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

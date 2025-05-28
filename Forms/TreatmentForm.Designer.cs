@@ -61,7 +61,6 @@
             Column2 = new DataGridViewTextBoxColumn();
             label8 = new Label();
             picDelete = new PictureBox();
-            picPlus = new PictureBox();
             picRefresh = new PictureBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
@@ -70,7 +69,6 @@
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDelete).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picPlus).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picRefresh).BeginInit();
             SuspendLayout();
             // 
@@ -146,16 +144,15 @@
             panel3.Controls.Add(lblPaient);
             panel3.Location = new Point(20, 103);
             panel3.Name = "panel3";
-            panel3.Size = new Size(276, 44);
+            panel3.Size = new Size(360, 44);
             panel3.TabIndex = 2;
             // 
             // linkLabel2
             // 
-            linkLabel2.AutoSize = true;
             linkLabel2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            linkLabel2.Location = new Point(175, 9);
+            linkLabel2.Location = new Point(93, 9);
             linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(95, 25);
+            linkLabel2.Size = new Size(267, 25);
             linkLabel2.TabIndex = 1;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Loading...";
@@ -177,16 +174,15 @@
             panel4.Controls.Add(lblDentist);
             panel4.Location = new Point(20, 153);
             panel4.Name = "panel4";
-            panel4.Size = new Size(276, 44);
+            panel4.Size = new Size(360, 44);
             panel4.TabIndex = 2;
             // 
             // linkLabel3
             // 
-            linkLabel3.AutoSize = true;
             linkLabel3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            linkLabel3.Location = new Point(175, 9);
+            linkLabel3.Location = new Point(93, 9);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(95, 25);
+            linkLabel3.Size = new Size(267, 25);
             linkLabel3.TabIndex = 1;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "Loading...";
@@ -283,6 +279,7 @@
             btnSave.Size = new Size(74, 32);
             btnSave.TabIndex = 7;
             btnSave.Text = "Save";
+            btnSave.Click += btnSave_Click_1;
             // 
             // label7
             // 
@@ -346,21 +343,11 @@
             picDelete.TabIndex = 12;
             picDelete.TabStop = false;
             // 
-            // picPlus
-            // 
-            picPlus.BackgroundImage = (Image)resources.GetObject("picPlus.BackgroundImage");
-            picPlus.BackgroundImageLayout = ImageLayout.Stretch;
-            picPlus.Location = new Point(829, 91);
-            picPlus.Name = "picPlus";
-            picPlus.Size = new Size(30, 30);
-            picPlus.TabIndex = 13;
-            picPlus.TabStop = false;
-            // 
             // picRefresh
             // 
             picRefresh.BackgroundImage = (Image)resources.GetObject("picRefresh.BackgroundImage");
             picRefresh.BackgroundImageLayout = ImageLayout.Stretch;
-            picRefresh.Location = new Point(781, 91);
+            picRefresh.Location = new Point(840, 91);
             picRefresh.Name = "picRefresh";
             picRefresh.Size = new Size(30, 30);
             picRefresh.TabIndex = 14;
@@ -391,7 +378,6 @@
             ClientSize = new Size(931, 647);
             Controls.Add(guna2Button1);
             Controls.Add(picRefresh);
-            Controls.Add(picPlus);
             Controls.Add(picDelete);
             Controls.Add(label8);
             Controls.Add(dataGridView1);
@@ -421,7 +407,6 @@
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picDelete).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picPlus).EndInit();
             ((System.ComponentModel.ISupportInitialize)picRefresh).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -452,7 +437,6 @@
         private DataGridViewTextBoxColumn Column2;
         private Label label8;
         private PictureBox picDelete;
-        private PictureBox picPlus;
         private PictureBox picRefresh;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Button btnClose;

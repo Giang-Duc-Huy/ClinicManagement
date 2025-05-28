@@ -51,11 +51,10 @@
             btnSessions = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
+            emailPage1 = new Pages.EmailPage();
+            sessionPage1 = new Pages.SessionPage();
             dashboardPage1 = new Pages.DashboardPage();
             appointmentPage1 = new Pages.AppointmentPage();
-            dentistPage1 = new Pages.DentistPage();
-            patientPage1 = new Pages.PatientPage();
-            sessionPage1 = new Pages.SessionPage();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -252,18 +251,36 @@
             guna2Button1.Size = new Size(218, 68);
             guna2Button1.TabIndex = 6;
             guna2Button1.Text = "Setting";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // panel2
             // 
+            panel2.Controls.Add(emailPage1);
             panel2.Controls.Add(sessionPage1);
             panel2.Controls.Add(dashboardPage1);
             panel2.Controls.Add(appointmentPage1);
-            panel2.Controls.Add(dentistPage1);
-            panel2.Controls.Add(patientPage1);
             panel2.Location = new Point(12, 216);
             panel2.Name = "panel2";
             panel2.Size = new Size(1385, 574);
             panel2.TabIndex = 7;
+            // 
+            // emailPage1
+            // 
+            emailPage1.BackColor = SystemColors.ControlLightLight;
+            emailPage1.Dock = DockStyle.Fill;
+            emailPage1.Location = new Point(0, 0);
+            emailPage1.Name = "emailPage1";
+            emailPage1.Size = new Size(1385, 574);
+            emailPage1.TabIndex = 2;
+            // 
+            // sessionPage1
+            // 
+            sessionPage1.BackColor = SystemColors.ControlLightLight;
+            sessionPage1.Dock = DockStyle.Fill;
+            sessionPage1.Location = new Point(0, 0);
+            sessionPage1.Name = "sessionPage1";
+            sessionPage1.Size = new Size(1385, 574);
+            sessionPage1.TabIndex = 2;
             // 
             // dashboardPage1
             // 
@@ -282,33 +299,6 @@
             appointmentPage1.Name = "appointmentPage1";
             appointmentPage1.Size = new Size(1385, 574);
             appointmentPage1.TabIndex = 2;
-            // 
-            // dentistPage1
-            // 
-            dentistPage1.BackColor = SystemColors.ControlLightLight;
-            dentistPage1.Dock = DockStyle.Fill;
-            dentistPage1.Location = new Point(0, 0);
-            dentistPage1.Name = "dentistPage1";
-            dentistPage1.Size = new Size(1385, 574);
-            dentistPage1.TabIndex = 1;
-            // 
-            // patientPage1
-            // 
-            patientPage1.BackColor = SystemColors.ControlLightLight;
-            patientPage1.Dock = DockStyle.Fill;
-            patientPage1.Location = new Point(0, 0);
-            patientPage1.Name = "patientPage1";
-            patientPage1.Size = new Size(1385, 574);
-            patientPage1.TabIndex = 0;
-            // 
-            // sessionPage1
-            // 
-            sessionPage1.BackColor = SystemColors.ControlLightLight;
-            sessionPage1.Dock = DockStyle.Fill;
-            sessionPage1.Location = new Point(0, 0);
-            sessionPage1.Name = "sessionPage1";
-            sessionPage1.Size = new Size(1385, 574);
-            sessionPage1.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -352,5 +342,6 @@
         private Pages.AppointmentPage appointmentPage1;
         private Pages.DashboardPage dashboardPage1;
         private Pages.SessionPage sessionPage1;
+        private Pages.EmailPage emailPage1;
     }
 }

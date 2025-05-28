@@ -21,7 +21,19 @@ namespace ClinicManagement.Models
         public DbSet<Clinic> Clinic { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Treatment> Treatments { get; set; }
-        public DbSet<Bill> Bills { get; set; }
-        
+        public DbSet<History> History { get; set; }
+        public DbSet<User> Users { get; set; }
+        public static void SeedDefaultUser()
+        {
+            using (var context = new AppDbContext())
+            {
+                if (!context.Users.Any(u => u.Username == "admin"))
+                {
+                    context.Users.Add(new User { Username = "admin", Password = "123456" });
+                    context.SaveChanges();
+                }
+            }
+        }
+
     }
 }

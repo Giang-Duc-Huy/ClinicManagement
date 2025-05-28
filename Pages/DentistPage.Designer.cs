@@ -46,16 +46,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             dataGridView1 = new DataGridView();
-            Column3 = new DataGridViewImageColumn();
-            clmName = new DataGridViewTextBoxColumn();
-            clmPhone = new DataGridViewTextBoxColumn();
-            clmEmail = new DataGridViewTextBoxColumn();
-            clmAddress = new DataGridViewTextBoxColumn();
-            clmDOB = new DataGridViewTextBoxColumn();
-            clmGender = new DataGridViewTextBoxColumn();
-            clmAllergies = new DataGridViewTextBoxColumn();
-            clmCreatedAt = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewLinkColumn();
             btnAddPatient = new Guna.UI2.WinForms.Guna2Button();
             pnlAdd = new Guna.UI2.WinForms.Guna2ShadowPanel();
             panel7 = new Panel();
@@ -127,84 +117,12 @@
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column3, clmName, clmPhone, clmEmail, clmAddress, clmDOB, clmGender, clmAllergies, clmCreatedAt, Column1 });
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(13, 75);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(1357, 486);
             dataGridView1.TabIndex = 1;
-            // 
-            // Column3
-            // 
-            Column3.FillWeight = 45.701458F;
-            Column3.HeaderText = "";
-            Column3.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            Column3.MinimumWidth = 8;
-            Column3.Name = "Column3";
-            // 
-            // clmName
-            // 
-            clmName.FillWeight = 151.513718F;
-            clmName.HeaderText = "Name";
-            clmName.MinimumWidth = 8;
-            clmName.Name = "clmName";
-            // 
-            // clmPhone
-            // 
-            clmPhone.FillWeight = 43.8279648F;
-            clmPhone.HeaderText = "Phone";
-            clmPhone.MinimumWidth = 8;
-            clmPhone.Name = "clmPhone";
-            // 
-            // clmEmail
-            // 
-            clmEmail.FillWeight = 43.8279648F;
-            clmEmail.HeaderText = "Email";
-            clmEmail.MinimumWidth = 8;
-            clmEmail.Name = "clmEmail";
-            // 
-            // clmAddress
-            // 
-            clmAddress.FillWeight = 43.8279648F;
-            clmAddress.HeaderText = "Address";
-            clmAddress.MinimumWidth = 8;
-            clmAddress.Name = "clmAddress";
-            // 
-            // clmDOB
-            // 
-            clmDOB.FillWeight = 43.8279648F;
-            clmDOB.HeaderText = "DOB";
-            clmDOB.MinimumWidth = 8;
-            clmDOB.Name = "clmDOB";
-            // 
-            // clmGender
-            // 
-            clmGender.FillWeight = 53.9416542F;
-            clmGender.HeaderText = "Gender";
-            clmGender.MinimumWidth = 8;
-            clmGender.Name = "clmGender";
-            // 
-            // clmAllergies
-            // 
-            clmAllergies.FillWeight = 88.58712F;
-            clmAllergies.HeaderText = "Allergies";
-            clmAllergies.MinimumWidth = 8;
-            clmAllergies.Name = "clmAllergies";
-            // 
-            // clmCreatedAt
-            // 
-            clmCreatedAt.FillWeight = 88.58712F;
-            clmCreatedAt.HeaderText = "CreatedAt";
-            clmCreatedAt.MinimumWidth = 8;
-            clmCreatedAt.Name = "clmCreatedAt";
-            // 
-            // Column1
-            // 
-            Column1.DataPropertyName = "Edit";
-            Column1.HeaderText = "";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
             // 
             // btnAddPatient
             // 
@@ -238,10 +156,10 @@
             pnlAdd.Controls.Add(label1);
             pnlAdd.Dock = DockStyle.Right;
             pnlAdd.FillColor = Color.White;
-            pnlAdd.Location = new Point(795, 0);
+            pnlAdd.Location = new Point(797, 0);
             pnlAdd.Name = "pnlAdd";
             pnlAdd.ShadowColor = Color.Black;
-            pnlAdd.Size = new Size(590, 583);
+            pnlAdd.Size = new Size(588, 583);
             pnlAdd.TabIndex = 3;
             // 
             // panel7
@@ -251,7 +169,7 @@
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 0);
             panel7.Name = "panel7";
-            panel7.Size = new Size(590, 60);
+            panel7.Size = new Size(588, 60);
             panel7.TabIndex = 7;
             // 
             // button1
@@ -284,6 +202,7 @@
             btnSave.Size = new Size(90, 45);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
+            btnSave.Click += btnSave_Click_1;
             // 
             // panel6
             // 
@@ -570,16 +489,6 @@
         private Label label1;
         private Button button1;
         private BindingSource dentistBindingSource;
-        private DataGridViewImageColumn Column3;
-        private DataGridViewTextBoxColumn clmName;
-        private DataGridViewTextBoxColumn clmPhone;
-        private DataGridViewTextBoxColumn clmEmail;
-        private DataGridViewTextBoxColumn clmAddress;
-        private DataGridViewTextBoxColumn clmDOB;
-        private DataGridViewTextBoxColumn clmGender;
-        private DataGridViewTextBoxColumn clmAllergies;
-        private DataGridViewTextBoxColumn clmCreatedAt;
-        private DataGridViewLinkColumn Column1;
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Label label2;
