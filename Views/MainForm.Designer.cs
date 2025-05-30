@@ -52,9 +52,7 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
             emailPage1 = new Pages.EmailPage();
-            sessionPage1 = new Pages.SessionPage();
             dashboardPage1 = new Pages.DashboardPage();
-            appointmentPage1 = new Pages.AppointmentPage();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -224,7 +222,7 @@
             btnSessions.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnSessions.Size = new Size(218, 68);
             btnSessions.TabIndex = 4;
-            btnSessions.Text = "Sessions";
+            btnSessions.Text = "History";
             btnSessions.Click += btnSessions_Click;
             // 
             // guna2Button1
@@ -250,15 +248,13 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button1.Size = new Size(218, 68);
             guna2Button1.TabIndex = 6;
-            guna2Button1.Text = "Setting";
+            guna2Button1.Text = "Gmail";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // panel2
             // 
             panel2.Controls.Add(emailPage1);
-            panel2.Controls.Add(sessionPage1);
             panel2.Controls.Add(dashboardPage1);
-            panel2.Controls.Add(appointmentPage1);
             panel2.Location = new Point(12, 216);
             panel2.Name = "panel2";
             panel2.Size = new Size(1385, 574);
@@ -273,15 +269,6 @@
             emailPage1.Size = new Size(1385, 574);
             emailPage1.TabIndex = 2;
             // 
-            // sessionPage1
-            // 
-            sessionPage1.BackColor = SystemColors.ControlLightLight;
-            sessionPage1.Dock = DockStyle.Fill;
-            sessionPage1.Location = new Point(0, 0);
-            sessionPage1.Name = "sessionPage1";
-            sessionPage1.Size = new Size(1385, 574);
-            sessionPage1.TabIndex = 2;
-            // 
             // dashboardPage1
             // 
             dashboardPage1.BackColor = SystemColors.ControlLightLight;
@@ -290,15 +277,6 @@
             dashboardPage1.Name = "dashboardPage1";
             dashboardPage1.Size = new Size(1385, 574);
             dashboardPage1.TabIndex = 2;
-            // 
-            // appointmentPage1
-            // 
-            appointmentPage1.BackColor = SystemColors.ControlLightLight;
-            appointmentPage1.Dock = DockStyle.Fill;
-            appointmentPage1.Location = new Point(0, 0);
-            appointmentPage1.Name = "appointmentPage1";
-            appointmentPage1.Size = new Size(1385, 574);
-            appointmentPage1.TabIndex = 2;
             // 
             // MainForm
             // 

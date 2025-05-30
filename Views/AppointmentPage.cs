@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClinicManagement.Controllers;
+using ClinicManagement.Pages;
 
 namespace ClinicManagement.Pages
 {
@@ -21,6 +22,7 @@ namespace ClinicManagement.Pages
         private string _selectedDentistId;
         private string _selectedPatientName;
         private string _selectedDentistName;
+        private string _currentStatus = "All";
         public AppointmentPage()
         {
             InitializeComponent();
@@ -68,13 +70,13 @@ namespace ClinicManagement.Pages
             if (dataGridView1.Rows.Count > 0)
                 dataGridView1.Rows[0].Selected = true;
         }
-        private void btnAll_Click_1(object sender, EventArgs e) => LoadAppointmentsToGrid("All", null);
-        private void btnPending_Click_1(object sender, EventArgs e) => LoadAppointmentsToGrid("Pending", null);
-        private void btnComplete_Click(object sender, EventArgs e) => LoadAppointmentsToGrid("Completed", null);
-        private void btnCancel_Click(object sender, EventArgs e) => LoadAppointmentsToGrid("Canceled", null);
+        private void btnAll_Click_1(object sender, EventArgs e) { _currentStatus = "All"; LoadAppointmentsToGrid(_currentStatus, null); }
+        private void btnPending_Click_1(object sender, EventArgs e) { _currentStatus = "Pending"; LoadAppointmentsToGrid(_currentStatus, null); }
+        private void btnComplete_Click(object sender, EventArgs e) { _currentStatus = "Completed"; LoadAppointmentsToGrid(_currentStatus, null); }
+        private void btnCancel_Click(object sender, EventArgs e) { _currentStatus = "Canceled"; LoadAppointmentsToGrid(_currentStatus, null); }
         private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            LoadAppointmentsToGrid("All", guna2DateTimePicker1.Value.Date);
+            LoadAppointmentsToGrid(_currentStatus, guna2DateTimePicker1.Value.Date);
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -137,29 +139,38 @@ namespace ClinicManagement.Pages
                 Time = guna2TextBox5.Text.Trim(),
                 Notes = guna2TextBox6.Text.Trim(),
             };
-            bool success = _appointmentController.AddAppointmentWithCheck(appt);
+            bool success = _appointmentController.AddAppointment(appt);
             if (!success)
             {
                 MessageBox.Show("Lịch khám này đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             MessageBox.Show("Đặt lịch thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ((MainForm)Application.OpenForms["MainForm"])?.DashboardPageInstance?.RefreshDashboard();
             pnlAdd.Visible = false;
             LoadAppointmentsToGrid("All", null);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0) return;
             var grid = dataGridView1;
-            var id = Convert.ToInt32(grid.Rows[e.RowIndex].Cells["Id"].Value);
+            if (e.RowIndex < 0 || e.RowIndex >= grid.Rows.Count) return;
+            var row = grid.Rows[e.RowIndex];
+            if (row.IsNewRow || row.Cells["Id"].Value == null) return;
+            var id = Convert.ToInt32(row.Cells["Id"].Value);
             if (grid.Columns[e.ColumnIndex].Name == "Pending")
                 _appointmentController.UpdateStatus(id, "Pending");
             else if (grid.Columns[e.ColumnIndex].Name == "Completed")
                 _appointmentController.UpdateStatus(id, "Completed");
             else if (grid.Columns[e.ColumnIndex].Name == "Canceled")
                 _appointmentController.UpdateStatus(id, "Canceled");
-            LoadAppointmentsToGrid("All", guna2DateTimePicker1.Value.Date);
+            ((MainForm)Application.OpenForms["MainForm"])?.DashboardPageInstance?.RefreshDashboard();
+            LoadAppointmentsToGrid(_currentStatus, guna2DateTimePicker1.Value.Date);
+            if (dataGridView1.Rows.Count == 0 && _currentStatus != "All")
+            {
+                _currentStatus = "All";
+                LoadAppointmentsToGrid(_currentStatus, guna2DateTimePicker1.Value.Date);
+            }
         }
     }
 }

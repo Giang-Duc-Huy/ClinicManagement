@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicManagement.Pages;
 
 namespace ClinicManagement
 {
@@ -29,6 +30,14 @@ namespace ClinicManagement
             dentistPage1 = new ClinicManagement.Pages.DentistPage();
             dentistPage1.Dock = DockStyle.Fill;
             panel2.Controls.Add(dentistPage1);
+            appointmentPage1 = new ClinicManagement.Pages.AppointmentPage();
+            appointmentPage1.Dock = DockStyle.Fill;
+            panel2.Controls.Add(appointmentPage1);
+            sessionPage1 = new ClinicManagement.Pages.SessionPage();
+            sessionPage1.Dock = DockStyle.Fill;
+            sessionPage1.BackColor = Color.White;
+            panel2.Controls.Add(sessionPage1);
+
         }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
@@ -102,7 +111,7 @@ namespace ClinicManagement
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Thông báo", "Chắc chứ", MessageBoxButtons.OKCancel);
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (result == DialogResult.OK)
             {
@@ -119,5 +128,8 @@ namespace ClinicManagement
             sessionPage1.Visible = false;
             emailPage1.Visible = true;
         }
+
+        public DashboardPage DashboardPageInstance => dashboardPage1;
+        public SessionPage SessionPageInstance => sessionPage1;
     }
 }

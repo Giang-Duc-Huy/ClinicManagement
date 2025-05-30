@@ -34,9 +34,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreatmentForm));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnClose = new Button();
             label1 = new Label();
@@ -60,16 +61,13 @@
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             label8 = new Label();
-            picDelete = new PictureBox();
-            picRefresh = new PictureBox();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            btnDelete = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picDelete).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picRefresh).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -304,7 +302,7 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
-            dataGridView1.Location = new Point(411, 137);
+            dataGridView1.Location = new Point(423, 137);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(508, 458);
@@ -333,42 +331,41 @@
             label8.TabIndex = 11;
             label8.Text = "Billing";
             // 
-            // picDelete
+            // btnAdd
             // 
-            picDelete.BackgroundImage = (Image)resources.GetObject("picDelete.BackgroundImage");
-            picDelete.BackgroundImageLayout = ImageLayout.Stretch;
-            picDelete.Location = new Point(876, 91);
-            picDelete.Name = "picDelete";
-            picDelete.Size = new Size(30, 30);
-            picDelete.TabIndex = 12;
-            picDelete.TabStop = false;
+            btnAdd.BorderRadius = 15;
+            btnAdd.CustomizableEdges = customizableEdges7;
+            btnAdd.DisabledState.BorderColor = Color.DarkGray;
+            btnAdd.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdd.ForeColor = Color.White;
+            btnAdd.Location = new Point(756, 601);
+            btnAdd.Name = "btnAdd";
+            btnAdd.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnAdd.Size = new Size(74, 32);
+            btnAdd.TabIndex = 15;
+            btnAdd.Text = "Add";
+            btnAdd.Click += btnAdd_Click;
             // 
-            // picRefresh
+            // btnDelete
             // 
-            picRefresh.BackgroundImage = (Image)resources.GetObject("picRefresh.BackgroundImage");
-            picRefresh.BackgroundImageLayout = ImageLayout.Stretch;
-            picRefresh.Location = new Point(840, 91);
-            picRefresh.Name = "picRefresh";
-            picRefresh.Size = new Size(30, 30);
-            picRefresh.TabIndex = 14;
-            picRefresh.TabStop = false;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BorderRadius = 15;
-            guna2Button1.CustomizableEdges = customizableEdges7;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(659, 601);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button1.Size = new Size(165, 32);
-            guna2Button1.TabIndex = 15;
-            guna2Button1.Text = "View Receipt";
+            btnDelete.BorderRadius = 15;
+            btnDelete.CustomizableEdges = customizableEdges9;
+            btnDelete.DisabledState.BorderColor = Color.DarkGray;
+            btnDelete.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDelete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDelete.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(643, 601);
+            btnDelete.Name = "btnDelete";
+            btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnDelete.Size = new Size(96, 32);
+            btnDelete.TabIndex = 16;
+            btnDelete.Text = "Delete";
+            btnDelete.Click += btnDelete_Click;
             // 
             // TreatmentForm
             // 
@@ -376,9 +373,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(931, 647);
-            Controls.Add(guna2Button1);
-            Controls.Add(picRefresh);
-            Controls.Add(picDelete);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAdd);
             Controls.Add(label8);
             Controls.Add(dataGridView1);
             Controls.Add(lblTotal);
@@ -406,8 +402,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picDelete).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picRefresh).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -436,9 +430,8 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private Label label8;
-        private PictureBox picDelete;
-        private PictureBox picRefresh;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Button btnClose;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
     }
 }

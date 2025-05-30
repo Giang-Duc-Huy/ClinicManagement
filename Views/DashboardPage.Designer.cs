@@ -39,8 +39,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            dataGridView2 = new DataGridView();
-            dataGridView1 = new DataGridView();
+            dgvASS = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            dgvPeriodicReport = new DataGridView();
+            Column4 = new DataGridViewTextBoxColumn();
+            Collumn2 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
             lblCancel = new Label();
             label14 = new Label();
             guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -73,14 +79,8 @@
             guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             label3 = new Label();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Collumn2 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvASS).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPeriodicReport).BeginInit();
             guna2ShadowPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox6).BeginInit();
@@ -102,27 +102,69 @@
             guna2Panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView2
+            // dgvASS
             // 
-            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView2.Location = new Point(19, 315);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(670, 250);
-            dataGridView2.TabIndex = 11;
+            dgvASS.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dgvASS.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvASS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvASS.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dgvASS.Location = new Point(19, 315);
+            dgvASS.Name = "dgvASS";
+            dgvASS.RowHeadersWidth = 62;
+            dgvASS.Size = new Size(670, 250);
+            dgvASS.TabIndex = 11;
             // 
-            // dataGridView1
+            // Column1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column4, Collumn2, Column5 });
-            dataGridView1.Location = new Point(708, 66);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(656, 499);
-            dataGridView1.TabIndex = 8;
+            Column1.HeaderText = "Status";
+            Column1.MinimumWidth = 8;
+            Column1.Name = "Column1";
+            Column1.Width = 210;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Count";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Percentage";
+            Column3.MinimumWidth = 8;
+            Column3.Name = "Column3";
+            Column3.Width = 200;
+            // 
+            // dgvPeriodicReport
+            // 
+            dgvPeriodicReport.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPeriodicReport.Columns.AddRange(new DataGridViewColumn[] { Column4, Collumn2, Column5 });
+            dgvPeriodicReport.Location = new Point(708, 66);
+            dgvPeriodicReport.Name = "dgvPeriodicReport";
+            dgvPeriodicReport.RowHeadersWidth = 62;
+            dgvPeriodicReport.Size = new Size(656, 499);
+            dgvPeriodicReport.TabIndex = 8;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Total Revenue";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.Width = 200;
+            // 
+            // Collumn2
+            // 
+            Collumn2.HeaderText = "Month";
+            Collumn2.MinimumWidth = 8;
+            Collumn2.Name = "Collumn2";
+            Collumn2.Width = 200;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Year";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.Width = 200;
             // 
             // lblCancel
             // 
@@ -502,48 +544,6 @@
             label3.TabIndex = 15;
             label3.Text = "Appointment Status Summary";
             // 
-            // Column1
-            // 
-            Column1.HeaderText = "Status";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
-            Column1.Width = 210;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Count";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Percentage";
-            Column3.MinimumWidth = 8;
-            Column3.Name = "Column3";
-            Column3.Width = 200;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Total Revenue";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            Column4.Width = 200;
-            // 
-            // Collumn2
-            // 
-            Collumn2.HeaderText = "Month";
-            Collumn2.MinimumWidth = 8;
-            Collumn2.Name = "Collumn2";
-            Collumn2.Width = 200;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Year";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            Column5.Width = 200;
-            // 
             // DashboardPage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -552,14 +552,14 @@
             Controls.Add(guna2Panel2);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvASS);
+            Controls.Add(dgvPeriodicReport);
             Controls.Add(guna2Panel1);
             Name = "DashboardPage";
             Size = new Size(1385, 574);
             Load += DashboardPage_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvASS).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPeriodicReport).EndInit();
             guna2ShadowPanel7.ResumeLayout(false);
             guna2ShadowPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -591,8 +591,8 @@
 
         #endregion
 
-        private DataGridView dataGridView2;
-        private DataGridView dataGridView1;
+        private DataGridView dgvASS;
+        private DataGridView dgvPeriodicReport;
         private Label lblCancel;
         private Label label14;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;

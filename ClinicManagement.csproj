@@ -21,13 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Pages\AppointmentPage.cs">
+    <Compile Update="Views\AppointmentPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Pages\DentistPage.cs">
+    <Compile Update="Views\DentistPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Pages\SessionPage.cs">
+    <Compile Update="Views\SessionPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">

@@ -32,5 +32,10 @@ namespace ClinicManagement.Controllers
             _context.History.Add(history);
             _context.SaveChanges();
         }
+        public List<History> GetHistoriesForDisplay(DateTime? date = null)
+        {
+            var histories = GetHistories("", date);
+            return histories;
+        }
     }
 } 

@@ -48,5 +48,40 @@ namespace ClinicManagement.Controllers
             }
             return true;
         }
+
+        public bool UpdateDentist(Dentist dentist)
+        {
+            var d = _context.Dentists.FirstOrDefault(x => x.Id == dentist.Id);
+            if (d == null) return false;
+            d.Name = dentist.Name;
+            d.Phone = dentist.Phone;
+            d.Email = dentist.Email;
+            d.Address = dentist.Address;
+            d.DOB = dentist.DOB;
+            d.Gender = dentist.Gender;
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool DeleteDentist(string id)
+        {
+            var d = _context.Dentists.FirstOrDefault(x => x.Id == id);
+            if (d == null) return false;
+            _context.Dentists.Remove(d);
+            _context.SaveChanges();
+            return true;
+        }
+
+        public List<Dentist> SearchDentists(string keyword)
+        {
+            if (string.IsNullOrWhiteSpace(keyword)) return GetAllDentists();
+            keyword = keyword.ToLower();
+            return _context.Dentists
+                .Where(d => d.Name.ToLower().Contains(keyword) ||
+                            d.Phone.ToLower().Contains(keyword) ||
+                            d.Email.ToLower().Contains(keyword))
+                .OrderByDescending(d => d.Createdat)
+                .ToList();
+        }
     }
 } 

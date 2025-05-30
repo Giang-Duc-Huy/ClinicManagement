@@ -13,6 +13,50 @@ namespace ClinicManagement.Controllers
             _context = new AppDbContext();
         }
 
+        public List<Appointment> GetAllAppointments()
+        {
+            return _context.Appointments.OrderByDescending(a => a.DateCreated).ToList();
+        }
+
+        public bool AddAppointment(Appointment appointment)
+        {
+            try
+            {
+                _context.Appointments.Add(appointment);
+                _context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateAppointment(Appointment appointment)
+        {
+            var a = _context.Appointments.FirstOrDefault(x => x.Id == appointment.Id);
+            if (a == null) return false;
+            a.DentistID = appointment.DentistID;
+            a.PatientID = appointment.PatientID;
+            a.Date = appointment.Date;
+            a.Time = appointment.Time;
+            a.Notes = appointment.Notes;
+            a.Pending = appointment.Pending;
+            a.Completed = appointment.Completed;
+            a.Canceled = appointment.Canceled;
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool DeleteAppointment(int id)
+        {
+            var a = _context.Appointments.FirstOrDefault(x => x.Id == id);
+            if (a == null) return false;
+            _context.Appointments.Remove(a);
+            _context.SaveChanges();
+            return true;
+        }
+
         public List<Appointment> GetAppointments(string status = "All", DateTime? date = null)
         {
             var query = _context.Appointments.AsQueryable();

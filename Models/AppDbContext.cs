@@ -13,7 +13,7 @@ namespace ClinicManagement.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source=clinic.db");
+                optionsBuilder.UseSqlite("Data Source=D:\\Clinicmnm - Copy\\ClinicManagement\\bin\\Debug\\net8.0-windows\\clinic.db");
             }
         }
         public DbSet<Dentist> Dentists { get; set; }

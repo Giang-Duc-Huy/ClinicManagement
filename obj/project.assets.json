@@ -4899,11 +4899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2\\ClinicManagement\\ClinicManagement.csproj",
+      "projectUniqueName": "D:\\Clinicmnm - Copy - Copy\\ClinicManagement\\ClinicManagement.csproj",
       "projectName": "ClinicManagement",
-      "projectPath": "D:\\2\\ClinicManagement\\ClinicManagement.csproj",
+      "projectPath": "D:\\Clinicmnm - Copy - Copy\\ClinicManagement\\ClinicManagement.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\2\\ClinicManagement\\obj\\",
+      "outputPath": "D:\\Clinicmnm - Copy - Copy\\ClinicManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
